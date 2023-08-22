@@ -1,0 +1,85 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block title %}about{% endblock title%}
+{% block body %}
+<br>
+<br>
+<br>
+<div class="d-grid gap-2 d-sm-flex ">
+    <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"><a
+        <a href="{% url 'home' %}">back</a></button>
+
+</div>
+
+<div class="container-fluid my-4">
+    <div class="row">
+        <div class="col-6">
+            <h1 style="margin-left: 60px">skill</h1>
+            <h2 style="margin-left: 150px">
+            <ul>
+                <li>python</li>
+                <li>html</li>
+                <li>css</li>
+                <li>Django</li>
+                <li>Mysql</li>
+                <li>c</li>
+            </ul> </h2>
+        </div>
+
+    <div class="col-6 " >
+        <center>
+        <div>
+            <img src="{% static 'image/skill.jpg' %}" height="300" width="600" "img-fluid" alt="...">
+        </div>
+        </center>
+    </div>
+
+    <div class="container-fluid my-4">
+        <div class="row">
+            <div class="col-6">
+                <h1 style="margin-left: 60px">EDUCATION</h1>
+                <h2 style="margin-left: 150px">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><h3>INSTUTION NAME</h3></th>
+                            <th><h3>STREAM</h3></th>
+                            <th><h3>&nbsp;&nbsp;&nbsp;PASSING/PURSUING</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h4>IIMT COLLEGE OF ENGINEERING&nbsp;&nbsp;</h4></td>
+                            <td><h4>  CSE</h4></td>
+                            <td><h4>   &nbsp;PURSUING 2020-2024</h4></td>
+                        </tr>
+                        <tr>
+                            <td><h4>FATEH SINGH MAHAVIDHYALAY</h4></td>
+                            <td><h4>&nbsp;&nbsp;BSC</h4></td>
+                            <td><h4>&nbsp; PASSING 2016-2017</h4></td>
+                        </tr>
+                        <tr>
+                            <td><h4>RAJENDRA LOHIA VIDHYA MANDIR</h4></td>
+                            <td><h4>&nbsp;&nbsp;  PCM</h4></td>
+                            <td><h4>&nbsp;  PASSING 2016-2017</h4></td>
+                        </tr>
+                        <tr>
+                            <td><h4>RAJENDRA LOHIA VIDHYA MANDIR</h4></td>
+                            <td><h4>&nbsp;&nbsp;  PCM</h4></td>
+                            <td><h4>&nbsp;  PASSING 2014-2015</h4></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </h2>
+            </div>
+    
+        <div class="col-6 " style="margin-top: 90px;">
+            <center>
+            <div>
+                <img src="{% static 'image/education.jpg' %}" height="300" width="600" "img-fluid" alt="...">
+            </div>
+            </center>
+        </div>
+    
+
+{% endblock  %}

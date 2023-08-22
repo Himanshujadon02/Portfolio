@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title%}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .bgcolor{
+            background: black;
+            color: antiquewhite;
+        }
+    </style>
+
+
+</head>
+
+<body class="bgcolor">
+    <header> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/">PORTFOLIO</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#service">service</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#contact">contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+    
+            </header>
+            {% block body %}
+            <div class="container-fluid my-4">
+              <div class="row">
+                <div class="col-6" style="padding:100px 100px;">
+                  <div>
+                    <img src="{% static 'image/mypic3.jpg' %}" height=450px width="400px" "img-fluid" alt="...">
+                  </div>
+                  <br>
+                  <br>
+                  <div style="margin-left: 100px;">
+                      <a href="{% static 'file/resume.pdf' %}" download>
+                    <button type="button" class='btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold bx bxs-download' style='color:#091f75; font-size: 30px;' >Resume</i>
+                    </button>
+                  </a>
+                  </div>
+                    
+                    </div> 
+                <div class="col-6" style="padding:100px;">
+                  <div>
+                    <h1>Hi its Himanshu</h1>
+                    <p>
+                      Thanks for your interest, here
+                      is a quick story of me and this
+                      website.
+                      <hr color="black">
+                      I am python developer. I
+                      loves to solve programming problems
+                      in most efficient ways.He has worked with
+                      DE Shaw and Co. as a software
+                      developer.
+                      <hr color="black">
+              
+                      I do my work mainly in python-Language,
+                      HTML,CSS and Djando. python and html are my stronger section.
+                      Besides these I know Web Development,
+                      SQL and Django as well.
+                      <hr color="black">
+              
+                      This website is basically one of my
+                      Web Development project which is
+                      built using HTML only.
+                      Here one can also find ideas for
+                      projects in different languages.
+              
+                      Thanks again for reading this,
+                      because of people like you, it
+                      exists and prospers!
+                      <hr color="black">
+                      
+                      <a href="https://www.linkedin.com/in/himanshu-jadon-130960226/"><i class='bx bxl-linkedin-square' style='color:#cbccdf;  font-size:50px '></i></a>
+                      <a href="mailto:krishnathakurpinku@gmail.com"><i class='bx bx-envelope' style='color:#eaecf4; font-size:50px'></i></a>
+                      <a href="https://wa.me/919720806043"><i class='bx bxl-whatsapp' style="color:#eaecf4; font-size: 50px;"></i></a>
+                      <a href="https://goo.gl/maps/Kz8rCV55teJT7T9w5"><i class='bx bx-map' style='color:#eaecf4; font-size: 50px;' ></i></a>
+                    </p>
+                  </div>
+                </div> 
+                
+              </div>
+            </div> 
+ <div id="about" style="padding:100px 100px;">          
+<h1 >About Me</h1>
+<h4>Python Developer</h4>
+<center>
+    <div class="container-fluid my-4">
+
+        <div class="row">
+            <div class="col-6">
+
+                <div class="b-example-divider"></div>
+
+                <div class="bg-dark text-secondary px-4 py-5 text-center">
+                    <div class="py-5">
+                        <h1 class="display-5 fw-bold text-white">HIMANSHU JADON</h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="fs-5 mb-4">Hey! My name is Himanshu Jadon. I am from Aligarh, currently staying in
+                                Greater Noida. I pursuing Btech in <B>computer science and engineering</B> from <B>IIMT
+                                    COLLEGE OF ENGINEERING</B> ,GREATER NOIDA</p>
+                            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"><a
+                                        href="{% url 'detail' %}">MORE ABOUT ME</a></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 " style="padding-right:0px;">
+                <div>
+                    <img src="{% static 'image/mypic2.jpg' %}" height=600px width="300px" "img-fluid" alt="...">
+                </div>
+            </div>
+</center>
+</div> 
+</div> 
+<div id="service" style="padding:100px 100px;">
+<div class="container-fluid my-4">
+    
+  <div class="row">
+      <div class="col-6">
+          <div class="container px-4 py-5" id="hanging-icons">
+              <h2 class="pb-2 border-bottom">My Services</h2>
+              <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square text-body-emphasis  bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                   <img src="{% static 'image/pythonlogo.jpg' %}" width="50px" height="50px" alt="python" srcset="">
+                  </div>
+                  <div>
+                    <h3>Python Developer</h3>
+                    <p>I developed many GUI-Based desktop Application using python like face Recorgnition Attendence stystem,Message Encoder and Decorder etc.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      <img src="{% static 'image/webdeveloper.jpeg' %}" width="50px" height="50px" alt="python" srcset=""> 
+                  </div>
+                  <div>
+                    <h3>Web Developer</h3>
+                    <p>I developed many web application using html,css,Django and flask.some of them are chatbot etc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="col-6">
+          <div>
+              <img src="{% static 'image/service.jpeg' %}" height=450px "img-fluid" alt="...">
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- contact -->
+<div id="contact" style="padding:100px 100px;">
+<div class="container-fluid my-4">
+  <h1>Get In Touch</h1>
+  <div class="row">
+      <div class="col-6">
+          <form action="" method="post">
+          {% csrf_token %}
+              <div class="mb-3">
+                  <label for="exampleFormControlInput3" class="form-label">Full name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1"
+                      placeholder="name" name="add">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleFormControlInput3" class="form-label">phone number</label>
+                  <input type="number" class="form-control" id="exampleFormControlInput1"
+                      placeholder="mobile name" name="phone number">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleFormControlInput3" class="form-label">address</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1"
+                      placeholder="address" name="address">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="name@example.com" name="email">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleFormControlTextarea4" class="form-label">message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea name="message">
+              </div>
+              <button type="submit" class="btn btn-primary">submit</button>
+              <button type="reset" class=" btn btn-danger">reset</button>
+          </form>
+      </div>
+      <div class="col-6">
+        <a href="https://www.linkedin.com/in/himanshu-jadon-130960226/"><i class='bx bxl-linkedin-square' style='color:#cbccdf;  font-size:50px '></i></a>
+        <a href="mailto:krishnathakurpinku@gmail.com"><i class='bx bx-envelope' style='color:#eaecf4; font-size:50px'></i></a>
+        <a href="https://wa.me/919720806043"><i class='bx bxl-whatsapp' style="color:#eaecf4; font-size: 50px;"></i></a>
+        <a href="https://goo.gl/maps/Kz8rCV55teJT7T9w5"><i class='bx bx-map' style='color:#eaecf4; font-size: 50px;' ></i></a>
+        <div>
+              <img src="{% static 'image/contact.jpg' %}" height=450px width="700" "img-fluid" alt="...">
+          </div>
+  </div>
+</div> 
+</div>              
+            {% endblock body %}
+</body>
+</html>

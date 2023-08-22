@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        table,th,td{
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+        th,td{
+            background-color: rgb(74, 147, 147);
+        }
+
+    </style>
+</head>
+<body style="background-color: purple;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">HIMANSHU</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#objective">OBJECTIVE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">PERSONAL DETAILS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#WAC">WORKSHOP AND CERTIFICATION</a></li>
+              <li><a class="dropdown-item" href="#project">PROJECT</a></li>
+              <li><a class="dropdown-item" href="#intrest">INTERESTS</a></li>
+              <li><a class="dropdown-item" href="#activity">ACTIVITIES</a></li>
+              <li><hr class="dropdown-divider"></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+      <img src="{%static '/image/mypic.jpg'%}" class="img-thumbnail" alt="...">
+      <h1 class="text-body-emphasis">Hi its Himanshu</h1>
+      <p class="col-lg-8 mx-auto fs-5 text-muted">
+        Thanks for your interest, here
+        is a quick story of me and this
+        website.
+        <hr color="black">
+        I am python developer. I
+        loves to solve programming problems
+        in most efficient ways.He has worked with
+        DE Shaw and Co. as a software
+        developer.
+        <hr color="black">
+
+        I do my work mainly in python-Language,
+        HTML,CSS and Djando. python and html are my stronger section.
+        Besides these I know Web Development,
+        SQL and Django as well.
+        <hr color="black">
+
+        This website is basically one of my
+        Web Development project which is
+        built using HTML only.
+        Here one can also find ideas for
+        projects in different languages.
+
+        Thanks again for reading this,
+        because of people like you, it
+        exists and prospers!
+        <hr color="black">
+      </p>
+    </div>
+  </div>  
+    
+    
+    
+    <h1>HIMANSHU JADON<br><h2>Address-Police fire station,sector-Swarn Nagri,Gr.Noida <br> Mob:- +919720806043 <br>Email-krishnathakurpinku@gmail.com</h2></h1>
+    
+    
+    <h3 id="objective" style="background-color: aliceblue;">OBJECTIVE</h3>
+    <h4>I Seek challenging opportunities where I can fully use my skill for the success of the organization .</h4>
+    <h3 id="skill" style="background-color: aliceblue;">Skills</h3>
+    <h4><ul>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>django</li>
+        <li>c</li>
+        <li>c++</li>
+    </ul></h4>
+    <h3 id="education" style="background-color: aliceblue;">EDUCATION</h3>
+    <table>
+        <thead>
+            <tr>
+                <th><h3>INSTUTION NAME</h3></th>
+                <th><h3>STREAM</h3></th>
+                <th><h3>&nbsp;&nbsp;&nbsp;PASSING/PURSUING</h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><h4>IIMT COLLEGE OF ENGINEERING&nbsp;&nbsp;</h4></td>
+                <td><h4>  CSE</h4></td>
+                <td><h4>   &nbsp;PURSUING 2020-2024</h4></td>
+            </tr>
+            <tr>
+                <td><h4>FATEH SINGH MAHAVIDHYALAY</h4></td>
+                <td><h4>&nbsp;&nbsp;BSC</h4></td>
+                <td><h4>&nbsp; PASSING 2016-2017</h4></td>
+            </tr>
+            <tr>
+                <td><h4>RAJENDRA LOHIA VIDHYA MANDIR</h4></td>
+                <td><h4>&nbsp;&nbsp;  PCM</h4></td>
+                <td><h4>&nbsp;  PASSING 2016-2017</h4></td>
+            </tr>
+            <tr>
+                <td><h4>RAJENDRA LOHIA VIDHYA MANDIR</h4></td>
+                <td><h4>&nbsp;&nbsp;  PCM</h4></td>
+                <td><h4>&nbsp;  PASSING 2014-2015</h4></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="WAC">
+    <h3 style="background-color: aliceblue;">WORKSHOP AND CERTIFICATION</h3>
+    <h4><ul>
+        <li>certification in cyber security workshop by up police</li>
+        <li>certification in innovation workshop by cepta infotech pvt.ltd</li>
+        <li>certification in deep learning by cepta infotech pvt.ltd</li>
+        <li>certification of selection in younity</li>
+        <li>certification of 40 days python training</li>
+    </ul></h4>
+  </div>
+    <div id="project">
+    <h3 style="background-color: aliceblue;">PROJECT</h3>
+    <h4><ul>
+        <li>The college management system helps educational institutions especially colleges in various ways, such as storing data,maintaining student profiles ,analyzing administrative and academic data,improving communication ,and engaging students.</li>
+    </ul></h4>
+    /<div id="intrest">
+    <h3 style="background-color: aliceblue;">INTERESTS</h3>
+    <h4><ul>
+        <li>Bicycling</li>
+        <li>Cricket</li>
+        <li>Kabaddi</li>
+    </ul></h4>
+    <div id="activity">
+    <h3 style="background-color: aliceblue;">ACTIVITIES</h3>
+    <h4><ul>
+        <li>Participated in college fest</li>
+        <li>Participated in Hackathon (college conducted)</li>
+        <li>Participated in swalakshya (college conducted)</li>
+    </ul></h4>
+  </div>
+  <div id="about">
+    <h3 style="background-color: aliceblue;">PERSONAL DETAILS</h3>
+    <h4><ul>
+        <li>Date of Birthday &nbsp;&nbsp;:09/09/2001</li>
+        <li>Marital status &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Single</li>
+        <li>Nationality &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Indian</li>
+        <li>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:Male</li>
+        <li>Known Languages :Hindi,English</li>
+        <li>Permanent Address: Aligarh</li>
+    </ul></h4>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
